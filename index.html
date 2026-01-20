@@ -111,14 +111,49 @@
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
 
+              <tr onmouseout="nips2025_stop()" onmouseover="nips2025_start()">
+                <td style="padding:20px;width:25%;vertical-align:top">
+                  <div class="one">
+                    <img src='images/nips2025_workshop.png' width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function nips2025_start() {
+                      document.getElementById('nips2025_main').style.opacity = "1";
+                    }
+
+                    function nips2025_stop() {
+                      document.getElementById('nips2025_main').style.opacity = "0";
+                    }
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:top">
+                  <a href="https://arxiv.org/abs/2509.19506">
+                    <papertitle>
+                      Frame-based Equivariant Diffusion Models for 3D Molecular Generation
+                    </papertitle>
+                  </a>
+                  <br>
+                  <a href="https://scholar.google.com/citations?user=ohRmcOAAAAAJ&hl=zh-TW">Mohan Guo*</a>,
+                  <strong>Cong Liu*</strong>,
+                  <a href="https://scholar.google.com/citations?user=fWbf74cAAAAJ">Patrick Forré</a>
+                  <br>
+                  <em>NeurIPS</em> Workshop, 2025
+                  <br>
+                  <a href="https://arxiv.org/abs/2509.19506">paper</a>
+                  <p></p>
+                  <p>
+                    We propose a frame-based diffusion paradigm for 3D molecular generation that achieves deterministic E(3)-equivariance
+                    while decoupling symmetry handling from the model backbone. The framework supports global and local frame constructions,
+                    improves scalability and sampling efficiency, and achieves state-of-the-art performance on QM9.
+                  </p>
+                </td>
+              </tr>
+
+
               <tr onmouseout="iclr2025_stop()" onmouseover="iclr2025_start()">
                 <td style="padding:20px;width:25%;vertical-align:top">
                   <div class="one">
-                    <!-- <div class="two" id='PCCC_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/PCCC_supervision.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div> -->
-                    <img src='images/iclr2025_main.png' width="160">
+                    <img src='images/iclr2025_workshop.png' width="160">
                   </div>
                   <script type="text/javascript">
                     function iclr2025_start() {
@@ -128,27 +163,35 @@
                     function iclr2025_stop() {
                       document.getElementById('iclr2025_main').style.opacity = "0";
                     }
-                    nerfsuper_stop()
                   </script>
                 </td>
                 <td style="padding:20px;width:75%;vertical-align:top">
-                  <a href="https://arxiv.org/abs/2504.15773">
-                    <papertitle>Clifford Group Equivariant Diffusion Models For 3D Molecular Generation</papertitle>
+                  <a href="#">
+                    <papertitle>
+                      Clifford Group Equivariant Diffusion Models for 3D Molecular Generation
+                    </papertitle>
                   </a>
                   <br>
                   <strong>Cong Liu*</strong>,
                   <a href="https://scholar.google.com/citations?user=gfRkDXEAAAAJ&hl=en">Sharvaree Vadgama*</a>,
                   <a href="https://scholar.google.com/citations?user=JoXl9zUAAAAJ&hl=en&oi=ao">David Ruhe</a>,
-                  <a href="https://scholar.google.com/citations?user=yeWrfR4AAAAJ&hl=da">Erik Bekkers</a>,
-                  <a href="https://scholar.google.com/citations?user=fWbf74cAAAAJ">Patrick Forré</a>,
+                  <a href="#">Erik Bekkers</a>,
+                  <a href="https://scholar.google.com/citations?user=fWbf74cAAAAJ">Patrick Forré</a>
                   <br>
-                  <em>ICLR</em>, FPI workshop, 2025
+                  <em>ICLR</em> 2025 FPI Workshop
                   <br>
-                  <a href="https://arxiv.org/pdf/2504.15773">paper</a> /
+                  <!-- 如果之后有 arXiv / project page，可以把 # 换掉 -->
+                  <a href="#">paper</a>
                   <p></p>
-                  <p>This paper presents diffusion models applied on Clifford grades for molecular generation.</p>
+                  <p>
+                    We introduce Clifford Diffusion Models (CDMs), which leverage the expressive power of Clifford algebra
+                    for deterministic E(n)-equivariant diffusion. By extending diffusion beyond vector features to higher-grade
+                    multivector subspaces, the model captures joint geometric distributions across subspaces and enables
+                    expressive and physically grounded 3D molecular generation on QM9.
+                  </p>
                 </td>
               </tr>
+
 
               <tr onmouseout="icml2024_stop()" onmouseover="icml2024_start()">
                 <td style="padding:20px;width:25%;vertical-align:top">
