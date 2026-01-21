@@ -99,8 +99,7 @@
               <tr>
                 <td style="padding:20px;width:100%;vertical-align:middle">
                   <heading>Research</heading>
-                  <p> I'm interested in AI4Science, Machine Learning, Geometric Deep Learning, Protein Engineering,
-                    Generative Modelling and Efficient Deep Learning.
+                  <p> I'm interested in AI4Science, specifically Protein Design and Generative Modeling.
                     <!--                Representative papers are <span class="highlight">highlighted</span>.-->
                   </p>
                 </td>
@@ -110,6 +109,47 @@
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
+
+              <tr onmouseout="pxdesign_stop()" onmouseover="pxdesign_start()">
+                <td style="padding:20px;width:25%;vertical-align:top">
+                  <div class="one">
+                    <img src='images/PXDesign.png' width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function pxdesign_start() {
+                      document.getElementById('pxdesign_main').style.opacity = "1";
+                    }
+
+                    function pxdesign_stop() {
+                      document.getElementById('pxdesign_main').style.opacity = "0";
+                    }
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:top">
+                  <a href="https://protenix.github.io/pxdesign/">
+                    <papertitle>
+                      PXDesign: Fast, Modular, and Accurate De Novo Design of Protein Binders
+                    </papertitle>
+                  </a>
+                  <br>
+                  Milong Ren,
+                  Jinyuan Sun,
+                  Jiaqi Guan,
+                  <strong>Cong Liu</strong>,
+                  Chengyue Gong,
+                  et al.
+                  <br>
+                  Technical Report, 2025
+                  <br>
+                  <a href="https://protenix.github.io/pxdesign/">project page</a>
+                  <p></p>
+                  <p>
+                    PXDesign is a fast and modular framework for de novo protein binder design, integrating structure prediction,
+                    sequence optimization, and evaluation in a unified pipeline. I contributed as a core team member, focusing on
+                    PXDesign-h development, evaluation pipeline and analysis.
+                  </p>
+                </td>
+              </tr>
 
               <tr onmouseout="nips2025_stop()" onmouseover="nips2025_start()">
                 <td style="padding:20px;width:25%;vertical-align:top">
